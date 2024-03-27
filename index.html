@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8" />
+
+		<title>Youtube v2.0</title>
+		<meta name="description" content="Youtube v2.0 - Best video" />
+
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, maximum-scale=1"
+		/>
+
+		<link rel="shortcut icon" href="img/common/favicon.png" type="image/png" />
+
+		<!-- Chrome, Firefox OS and Opera -->
+		<meta name="theme-color" content="#CD313A" />
+		<!-- Windows Phone -->
+		<meta name="msapplication-navbutton-color" content="#CD313A" />
+		<!-- iOS Safari -->
+		<meta name="apple-mobile-web-app-status-bar-style" content="#CD313A" />
+
+		<style>
+			body {
+				opacity: 0;
+				overflow-x: hidden;
+			}
+			html {
+				background-color: #fff;
+			}
+		</style>
+	</head>
+	<body>
+		<main id="youtube_main">
+			<section class="sidebar">
+				<a href="/" class="logo"
+					><img src="img/common/logo.png" alt="Youtube"
+				/></a>
+				<div class="profile_info">
+					<img src="img/main/avatar.jpg" alt="" />
+					<div class="name">Nannie Nelson</div>
+					<div class="location">Montreal, QC</div>
+				</div>
+				<div class="information">
+					<div class="item">
+						<div class="top">278</div>
+						<div class="bottom">videos</div>
+					</div>
+					<div class="item">
+						<div class="top">36.5k</div>
+						<div class="bottom">subscribers</div>
+					</div>
+				</div>
+				<div class="line"></div>
+				<ul class="mnu_sidebar">
+					<li>
+						<a href="#"
+							><img src="img/common/multimedia.svg" alt="" /><b>Videos</b></a
+						>
+					</li>
+					<li>
+						<a href="#"
+							><img src="img/common/video-camera.svg" alt="" /><b
+								>Movies & Shows</b
+							></a
+						>
+					</li>
+					<li>
+						<a href="#"
+							><img src="img/common/gift.svg" alt="" /><b
+								>Premium Contents</b
+							></a
+						>
+					</li>
+					<li>
+						<a href="#"
+							><img src="img/common/live-news.svg" alt="" /><b>Live</b></a
+						>
+					</li>
+
+					<div class="line_mnu"></div>
+
+					<li>
+						<a href="#"
+							><img src="img/common/calendar.svg" alt="" /><b>Subscribtions</b
+							><span class="number">29 new</span></a
+						>
+					</li>
+					<li>
+						<a href="#"
+							><img src="img/common/smartphone.svg" alt="" /><b>Library</b></a
+						>
+					</li>
+					<li>
+						<a href="#"
+							><img src="img/common/like.svg" alt="" /><b>Liked Videos</b></a
+						>
+					</li>
+					<li>
+						<a href="#"
+							><img src="img/common/time.svg" alt="" /><b>Watch Later</b></a
+						>
+					</li>
+
+					<div class="line_mnu"></div>
+
+					<li>
+						<a href="#"
+							><img src="img/common/adjust.svg" alt="" /><b>Settings</b></a
+						>
+					</li>
+					<li>
+						<a href="#"
+							><img src="img/common/support.svg" alt="" /><b
+								>Help & Report</b
+							></a
+						>
+					</li>
+				</ul>
+
+				<div class="switch_wrapper">
+					<label class="switch">
+						<input type="checkbox" checked />
+						<span class="slider round"></span>
+					</label>
+					<p>Light On</p>
+				</div>
+
+				<a href="#" id="logout_btn">Logout</a>
+				<div class="copy">© 2020 Youtube, LLC</div>
+			</section>
+			<section class="content">
+				<header id="header">
+					<div class="search_top">
+						<label>
+							<input
+								type="text"
+								placeholder="Search videos, stars or authors..."
+							/>
+							<img src="img/common/search.svg" alt="" />
+						</label>
+					</div>
+					<div class="icons_right">
+						<a href="#"><img src="img/common/plus.svg" alt="" /></a>
+						<a href="#"><img src="img/common/review.svg" alt="" /></a>
+						<a href="#"><img src="img/common/basket.svg" alt="" /></a>
+					</div>
+				</header>
+
+				<div id="wrapper_content">
+					<div class="left_side">
+						<div class="weekly_featured">
+							<div class="info_wf">
+								<div class="sub_name">Weekly Featured</div>
+								<h1>Hello, Summer Vacation!</h1>
+								<div class="descr">
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+									Aliquam harum placeat ullam vel non, quisquam totam,
+									doloremque expedita odit consectetur minima vitae. Facilis
+									nostrum cumque illum fugit rem, nam consectetur!
+								</div>
+								<div class="slider_wf">
+									<div class="video_item">
+										<div class="thumbnail">
+											<img src="img/main/1.jpg" alt="" />
+											<time>16:55</time>
+										</div>
+										<div class="author">Micheal Adams</div>
+										<div class="name">Day in my life: Summer ...</div>
+										<div class="number_info">
+											<div class="views">VIEWS 28.6K</div>
+											<div class="date">6DS AGO</div>
+										</div>
+									</div>
+
+									<div class="video_item">
+										<div class="thumbnail">
+											<img src="img/main/2.jpg" alt="" />
+											<time>07:23</time>
+										</div>
+										<div class="author">Dollie Cross</div>
+										<div class="name">Day in my life: Summer ...</div>
+										<div class="number_info">
+											<div class="views">VIEWS 26.7K</div>
+											<div class="date">10DS AGO</div>
+										</div>
+									</div>
+
+									<div class="video_item">
+										<div class="thumbnail">
+											<img src="img/main/3.jpg" alt="" />
+											<time>16:55</time>
+										</div>
+										<div class="author">Micheal Adams</div>
+										<div class="name">Day in my life: Summer ...</div>
+										<div class="number_info">
+											<div class="views">VIEWS 28.6K</div>
+											<div class="date">6DS AGO</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="top_video">
+								<div class="video_item">
+									<div class="thumbnail">
+										<img src="img/main/3.jpg" alt="" />
+										<time>28:32</time>
+										<div class="avatar">
+											<img src="img/main/avatar.jpg" alt="" />
+										</div>
+									</div>
+									<div class="author">Warren Munoz</div>
+									<div class="name">
+										Lake House Vacation! Boating, Tubing & More!
+									</div>
+									<div class="descr">
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+										Minus animi aut vel alias voluptate, odio. Tempora sequi et
+										itaque enim a, aut excepturi adipisci quam, aspernatur,
+										eaque obcaecati dolor tenetur :)
+									</div>
+									<div class="number_info">
+										<div class="views">VIEWS 29.2K</div>
+										<div class="likes">LIKES 1.6K</div>
+										<div class="date">3DS AGO</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="line"></div>
+
+						<div id="recommended">
+							<div class="top_block">
+								<div class="left_title title_gray">
+									<h2>Recommended</h2>
+									<div class="showmore">Show More</div>
+								</div>
+								<div class="sort">By View Trending</div>
+							</div>
+
+							<div class="catalog">
+								<div class="video_item">
+									<div class="thumbnail">
+										<img src="img/main/4.jpg" alt="" />
+										<time>28:32</time>
+										<div class="avatar">
+											<img src="img/main/avatar.jpg" alt="" />
+										</div>
+									</div>
+									<div class="author">Warren Munoz</div>
+									<div class="name">
+										Lake House Vacation! Boating, Tubing & More!
+									</div>
+									<div class="number_info">
+										<div class="views">VIEWS 29.2K</div>
+										<div class="date">3DS AGO</div>
+									</div>
+								</div>
+
+								<div class="video_item">
+									<div class="thumbnail">
+										<img src="img/main/5.jpg" alt="" />
+										<time>28:32</time>
+										<div class="avatar">
+											<img src="img/main/avatar.jpg" alt="" />
+										</div>
+									</div>
+									<div class="author">Warren Munoz</div>
+									<div class="name">
+										Lake House Vacation! Boating, Tubing & More!
+									</div>
+									<div class="number_info">
+										<div class="views">VIEWS 29.2K</div>
+										<div class="date">3DS AGO</div>
+									</div>
+								</div>
+
+								<div class="video_item">
+									<div class="thumbnail">
+										<img src="img/main/6.jpg" alt="" />
+										<time>28:32</time>
+										<div class="avatar">
+											<img src="img/main/avatar.jpg" alt="" />
+										</div>
+									</div>
+									<div class="author">Warren Munoz</div>
+									<div class="name">
+										Lake House Vacation! Boating, Tubing & More!
+									</div>
+									<div class="number_info">
+										<div class="views">VIEWS 29.2K</div>
+										<div class="date">3DS AGO</div>
+									</div>
+								</div>
+
+								<div class="video_item">
+									<div class="thumbnail">
+										<img src="img/main/13.jpg" alt="" />
+										<time>28:32</time>
+										<div class="avatar">
+											<img src="img/main/avatar.jpg" alt="" />
+										</div>
+									</div>
+									<div class="author">Warren Munoz</div>
+									<div class="name">
+										Lake House Vacation! Boating, Tubing & More!
+									</div>
+									<div class="number_info">
+										<div class="views">VIEWS 29.2K</div>
+										<div class="date">3DS AGO</div>
+									</div>
+								</div>
+
+								<div class="video_item">
+									<div class="thumbnail">
+										<img src="img/main/8.jpg" alt="" />
+										<time>28:32</time>
+										<div class="avatar">
+											<img src="img/main/avatar.jpg" alt="" />
+										</div>
+									</div>
+									<div class="author">Warren Munoz</div>
+									<div class="name">
+										Lake House Vacation! Boating, Tubing & More!
+									</div>
+									<div class="number_info">
+										<div class="views">VIEWS 29.2K</div>
+										<div class="date">3DS AGO</div>
+									</div>
+								</div>
+
+								<div class="video_item">
+									<div class="thumbnail">
+										<img src="img/main/9.jpg" alt="" />
+										<time>28:32</time>
+										<div class="avatar">
+											<img src="img/main/avatar.jpg" alt="" />
+										</div>
+									</div>
+									<div class="author">Warren Munoz</div>
+									<div class="name">
+										Lake House Vacation! Boating, Tubing & More!
+									</div>
+									<div class="number_info">
+										<div class="views">VIEWS 29.2K</div>
+										<div class="date">3DS AGO</div>
+									</div>
+								</div>
+
+								<div class="video_item">
+									<div class="thumbnail">
+										<img src="img/main/2.jpg" alt="" />
+										<time>28:32</time>
+										<div class="avatar">
+											<img src="img/main/avatar.jpg" alt="" />
+										</div>
+									</div>
+									<div class="author">Warren Munoz</div>
+									<div class="name">
+										Lake House Vacation! Boating, Tubing & More!
+									</div>
+									<div class="number_info">
+										<div class="views">VIEWS 29.2K</div>
+										<div class="date">3DS AGO</div>
+									</div>
+								</div>
+
+								<div class="video_item">
+									<div class="thumbnail">
+										<img src="img/main/11.jpg" alt="" />
+										<time>28:32</time>
+										<div class="avatar">
+											<img src="img/main/avatar.jpg" alt="" />
+										</div>
+									</div>
+									<div class="author">Warren Munoz</div>
+									<div class="name">
+										Lake House Vacation! Boating, Tubing & More!
+									</div>
+									<div class="number_info">
+										<div class="views">VIEWS 29.2K</div>
+										<div class="date">3DS AGO</div>
+									</div>
+								</div>
+
+								<div class="video_item video_big_item">
+									<img src="img/main/12.jpg" alt="" class="img-responsive" />
+								</div>
+
+								<div class="video_item">
+									<div class="thumbnail">
+										<img src="img/main/13.jpg" alt="" />
+										<time>28:32</time>
+										<div class="avatar">
+											<img src="img/main/avatar.jpg" alt="" />
+										</div>
+									</div>
+									<div class="author">Warren Munoz</div>
+									<div class="name">
+										Lake House Vacation! Boating, Tubing & More!
+									</div>
+									<div class="number_info">
+										<div class="views">VIEWS 29.2K</div>
+										<div class="date">3DS AGO</div>
+									</div>
+								</div>
+
+								<div class="video_item">
+									<div class="thumbnail">
+										<img src="img/main/14.jpg" alt="" />
+										<time>28:32</time>
+										<div class="avatar">
+											<img src="img/main/avatar.jpg" alt="" />
+										</div>
+									</div>
+									<div class="author">Warren Munoz</div>
+									<div class="name">
+										Lake House Vacation! Boating, Tubing & More!
+									</div>
+									<div class="number_info">
+										<div class="views">VIEWS 29.2K</div>
+										<div class="date">3DS AGO</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="right_side">
+						<div id="live">
+							<div class="title_gray">
+								<h2>Live</h2>
+								<div class="showmore">Show More</div>
+							</div>
+
+							<div class="video_item video_live_item">
+								<div class="thumbnail">
+									<img src="img/main/live.jpg" alt="" />
+									<div class="live">Live</div>
+									<div class="avatar">
+										<img src="img/main/avatar.jpg" alt="" />
+									</div>
+								</div>
+								<div class="author">Warren Munoz</div>
+								<div class="name">
+									Lake House Vacation! Boating, Tubing & More!
+								</div>
+								<div class="descr">
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+									Dolores ipsa voluptate, natus. Iure vitae dolores suscipit,
+									commodi debitis aut culpa sapiente architecto exercitationem.
+									Ullam laudantium ea hic inventore. Rem, alias.
+								</div>
+								<div class="number_info">
+									<div class="views">VIEWS 29.2K</div>
+									<div class="comments">COMMENTS 5.8K</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="line"></div>
+
+						<div id="top_channels">
+							<div class="title_gray">
+								<h2>Top Channels</h2>
+								<div class="showmore">Show More</div>
+							</div>
+
+							<div class="list_channels">
+								<div class="channel">
+									<div class="info_left">
+										<img src="img/main/avatar.jpg" alt="" />
+										<div class="info">
+											<div class="name">LEGO</div>
+											<div class="subs">6.2M Subscribers</div>
+										</div>
+									</div>
+									<a href="#" class="mnu"
+										><img src="img/common/open-menu.svg" alt=""
+									/></a>
+								</div>
+
+								<div class="channel">
+									<div class="info_left">
+										<img src="img/main/avatar.jpg" alt="" />
+										<div class="info">
+											<div class="name">LEGO</div>
+											<div class="subs">6.2M Subscribers</div>
+										</div>
+									</div>
+									<a href="#" class="mnu"
+										><img src="img/common/open-menu.svg" alt=""
+									/></a>
+								</div>
+
+								<div class="channel">
+									<div class="info_left">
+										<img src="img/main/avatar.jpg" alt="" />
+										<div class="info">
+											<div class="name">LEGO</div>
+											<div class="subs">6.2M Subscribers</div>
+										</div>
+									</div>
+									<a href="#" class="mnu"
+										><img src="img/common/open-menu.svg" alt=""
+									/></a>
+								</div>
+
+								<div class="channel">
+									<div class="info_left">
+										<img src="img/main/avatar.jpg" alt="" />
+										<div class="info">
+											<div class="name">LEGO</div>
+											<div class="subs">6.2M Subscribers</div>
+										</div>
+									</div>
+									<a href="#" class="mnu"
+										><img src="img/common/open-menu.svg" alt=""
+									/></a>
+								</div>
+
+								<div class="channel">
+									<div class="info_left">
+										<img src="img/main/avatar.jpg" alt="" />
+										<div class="info">
+											<div class="name">LEGO</div>
+											<div class="subs">6.2M Subscribers</div>
+										</div>
+									</div>
+									<a href="#" class="mnu"
+										><img src="img/common/open-menu.svg" alt=""
+									/></a>
+								</div>
+
+								<div class="channel">
+									<div class="info_left">
+										<img src="img/main/avatar.jpg" alt="" />
+										<div class="info">
+											<div class="name">LEGO</div>
+											<div class="subs">6.2M Subscribers</div>
+										</div>
+									</div>
+									<a href="#" class="mnu"
+										><img src="img/common/open-menu.svg" alt=""
+									/></a>
+								</div>
+							</div>
+						</div>
+
+						<div id="youtube_music">
+							<img
+								src="img/main/youtube_music.png"
+								alt=""
+								class="img-responsive"
+							/>
+							<a href="#" class="title">Youtube Music</a>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<!-- libs -->
+		<link
+			href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="libs/bootstrap-grid.min.css" />
+		<link rel="stylesheet" href="libs/jquery.fancybox.min.css" />
+		<link rel="stylesheet" href="libs/animate.css" />
+		<link rel="stylesheet" href="libs/slick/slick.css" />
+		<link rel="stylesheet" href="libs/slick/slick-theme.css" />
+
+		<script src="libs/jquery.min.js"></script>
+		<script src="libs/jquery.fancybox.min.js"></script>
+		<script src="libs/wow.min.js"></script>
+		<script src="libs/slick/slick.min.js"></script>
+
+		<link rel="stylesheet" href="css/main.css" />
+		<link rel="stylesheet" href="css/adaptive.css" />
+		<script src="js/common.js"></script>
+	</body>
+</html>
